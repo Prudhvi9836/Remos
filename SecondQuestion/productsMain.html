@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Selection</title>
+</head>
+<body>
+    <h1>Product Selection</h1>
+
+    <form id="productForm">
+        <label>Select products:</label><br>
+        <input type="checkbox" name="product" value="10" onchange="updateTotal()"> Product A - $10
+        <input type="number" name="quantity" min="1" value="1" onchange="updateTotal()"><br>
+
+        <input type="checkbox" name="product" value="15" onchange="updateTotal()"> Product B - $15
+        <input type="number" name="quantity" min="1" value="1" onchange="updateTotal()"><br>
+
+        <input type="checkbox" name="product" value="20" onchange="updateTotal()"> Product C - $20
+        <input type="number" name="quantity" min="1" value="1" onchange="updateTotal()"><br>
+        <!-- Add more product options here -->
+    </form>
+
+    <button type="button" onclick="calculateTotal()">Calculate Total</button>
+
+    <div id="totalAmount"></div>
+
+    <script src="calculations.js">
+        
+    </script>
+</body>
+</html>
